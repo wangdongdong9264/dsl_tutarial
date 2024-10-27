@@ -1,0 +1,26 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "ts-node": {
+      // It is faster to skip typechecking.
+      // Remove if you want ts-node to do typechecking.
+      "transpileOnly": true,
+      "files": true,
+      "compilerOptions": {
+        // compilerOptions specified here will override those declared below,
+        // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+        // different options with a single tsconfig.json.
+      }
+    },
+    "compilerOptions": {
+      // typescript options here
+      // "rootDirs": ["./src"],
+      // "baseUrl": "./",
+      "paths": {
+        "step_1": ["./src/step_1/"],
+        "step_2": ["./src/step_2/"],
+        "step_3": ["./src/step_3/"],
+        "step_4": ["./src/step_4/"],
+        "step_5": ["./src/step_5/"]
+      }
+    }
+}
