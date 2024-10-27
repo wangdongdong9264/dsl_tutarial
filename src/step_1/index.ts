@@ -109,7 +109,7 @@ class StateMachine{
             return;
         }
         result.push(s);
-        //从s计算可以转换到的状态
+        // calculate the states that can be converted from s
         result = result.concat(s.getAllTargets());
     }
     

@@ -4,7 +4,8 @@
   "description": "a simple dsl demo",
   "main": "index.js",
   "scripts": {
-    "test:stateMachine": "ts-node -r tsconfig-paths/register tests/step_1/index.ts",
+    "test:stateMachine": "ts-node -r tsconfig-paths/register tests/step_1/index.test.ts",
+    "test:tokenization": "ts-node -r tsconfig-paths/register tests/step_2/index.test.ts",
     "dev:stateMachine": "ts-node src/step_1/index.ts"
   },
   "repository": {
