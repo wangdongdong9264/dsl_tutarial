@@ -20,7 +20,7 @@
         "step_2": ["./src/step_2/"],
         "step_3": ["./src/step_3/"],
         "step_4": ["./src/step_4/"],
-        "step_5": ["./src/step_5/"]
+        "step_5/*": ["./src/step_5/*"]
       }
     }
 }

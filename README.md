@@ -44,7 +44,6 @@ Visitors are useful when you want to perform complex operations on the parse tre
 2. Validating the syntax of a program against a set of rules.
 3. Generating code for a programming language.
 
-
 ## other
 
 `tsconfig-paths` fixed ts-node path problem
