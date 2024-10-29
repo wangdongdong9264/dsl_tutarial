@@ -8,6 +8,8 @@
     "test:tokenization": "ts-node -r tsconfig-paths/register tests/step_2/index.test.ts",
     "test:recursiveParser": "ts-node -r tsconfig-paths/register tests/step_3/index.test.ts",
     "test:parserCombinators": "ts-node -r tsconfig-paths/register tests/step_4/index.test.ts",
+    "antlr4ts": "antlr4ts -visitor src/step_5/stateMachine.g",
+    "test:parserGenerator": "ts-node -r tsconfig-paths/register tests/step_5/index.test.ts",
     "dev:stateMachine": "ts-node src/step_1/index.ts"
   },
   "repository": {
@@ -25,8 +27,12 @@
   "homepage": "https://github.com/wangdongdong9264/dsl_tutarial#readme",
   "devDependencies": {
     "@tsconfig/node16": "^16.1.3",
+    "antlr4ts-cli": "^0.5.0-alpha.4",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "antlr4ts": "^0.5.0-alpha.4"
   }
 }
